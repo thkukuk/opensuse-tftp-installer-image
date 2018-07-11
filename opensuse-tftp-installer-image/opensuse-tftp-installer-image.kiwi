@@ -40,6 +40,5 @@
   <packages type="image">
     <package name="tftp"/>
     <package name="tftpboot-installer-collection"/>
-    <package name="rsyslog"/>
   </packages>
 </image>
