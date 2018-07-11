@@ -1,0 +1,6 @@
+<aggregatelist>
+  <aggregate project="openSUSE:Leap:15.0">
+    <binary>tftpboot-installation-openSUSE-Leap-15.0-x86_64</binary>
+    <repository target="standard" source="standard"/>
+  </aggregate>
+</aggregatelist>
