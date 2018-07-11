@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opensuse-tftp-installer
+spec:
+  containers:
+  - name: opensuse-tftp-installer
+    image: registry.opensuse.org/home/kukuk/container/container/kukuk/opensuse-tftp-installer:20180710
+    ports:
+    - containerPort: 69
