@@ -12,3 +12,7 @@ Run the container image:
 Configure your dhcp server to point to the host running the container.
 If there is a firewall in between, load the 'nf_conntrack_tftp' and
 'nf_nat_tftp' module.
+
+To run the container in a kubernetes cluster like SUSE CaaS Platform:
+
+    kubectl create -f pods/opensuse-installer.yaml
