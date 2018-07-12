@@ -13,7 +13,7 @@ Run the container image:
 
     docker run -d -p 69:69/udp registry.opensuse.org/home/kukuk/container/container/kukuk/opensuse-tftp-installer:20180710
 
-    or
+or
 
     docker run -d -p 69:69/udp thkukuk/opensuse-tftp-installer
 
