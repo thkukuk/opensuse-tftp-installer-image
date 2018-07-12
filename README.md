@@ -6,6 +6,7 @@ Pull the newest container image from the opensuse registry:
     docker pull registry.opensuse.org/home/kukuk/container/container/kukuk/opensuse-tftp-installer:20180710
 
 or from docker hub:
+
     docker pull thkukuk/opensuse-tftp-installer
 
 Run the container image:
