@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<image schemaversion="6.5" name="opensuse-pxe-server">
+  <description type="system">
+    <author>Thorsten Kukuk</author>
+    <contact>kukuk@suse.com</contact>
+    <specification>PXE Server providing openSUSE installer as a container</specification>
+  </description>
+  <preferences>
+    <type
+      image="docker"
+      derived_from="obsrepositories:/opensuse/tumbleweed#current">
+      <containerconfig
+        name="kukuk/opensuse-pxe-server"
+	tag="%%TAG%%"
+        maintainer="Thorsten Kukuk &lt;kukuk@suse.com&gt;">
+        <expose>
+          <port number="69"/>
+        </expose>
+        <entrypoint execute="/usr/local/bin/entrypoint.sh"/>
+      </containerconfig>
+    </type>
+    <version>0.0.1</version>
+    <packagemanager>zypper</packagemanager>
+    <rpm-check-signatures>false</rpm-check-signatures>
+    <rpm-force>true</rpm-force>
+    <rpm-excludedocs>true</rpm-excludedocs>
+    <locale>en_US</locale>
+    <keytable>us.map.gz</keytable>
+    <hwclock>utc</hwclock>
+  </preferences>
+  <repository>
+    <source path="obsrepositories:/"/>
+  </repository>
+  <packages type="image">
+    <package name="dnsmasq"/>
+    <package name="tftpboot-installer-collection"/>
+  </packages>
+</image>
