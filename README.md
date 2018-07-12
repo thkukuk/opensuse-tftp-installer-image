@@ -5,7 +5,7 @@ There are two images:
 * opensuse-tftp-installer - this image only contains a tftp daemon, the DHCP server needs to point to this server. This container image only needs port 69 forwarding.
 * opensuse-pxe-server - this image uses dnsmasq as PXE server, no changes to an existing DHCP server are necessary. This container image needs full access to the host network.
 
-# openSUSE tftp installer
+## openSUSE tftp installer
 
 Pull the newest container image from the opensuse registry:
 
@@ -31,7 +31,7 @@ To run the container in a kubernetes cluster like SUSE CaaS Platform:
 
     kubectl create -f https://raw.githubusercontent.com/thkukuk/opensuse-tftp-installer-image/master/pods/opensuse-tftp-installer.yaml
 
-# openSUSE PXE Server
+## openSUSE PXE Server
 
 Pull the newest container image from the opensuse registry:
 
