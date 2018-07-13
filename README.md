@@ -43,9 +43,9 @@ or from docker hub:
 
 Run the container image:
 
-    docker run -d --net=host registry.opensuse.org/home/kukuk/container/container/kukuk/opensuse-tftp-installer:20180710 <local IP>
+    docker run -d --net=host registry.opensuse.org/home/kukuk/container/container/kukuk/opensuse-pxe-server:20180710 <local IP>
 
 or
 
-    docker run -d --net=host thkukuk/opensuse-tftp-installer <local IP>
+    docker run -d --net=host thkukuk/opensuse-pxe-server <local IP>
 
